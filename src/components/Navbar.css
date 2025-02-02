@@ -1,50 +1,48 @@
-/* General page style to remove overflow */
+/* General page style */
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrollbars from appearing */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
     height: 100%;
     background-color: #0d0d0f; /* Deep Navy */
 }
 
-/* Half-Circle Navbar with upside down curve */
+/* Navbar container */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background: linear-gradient(145deg, #0a0a0a, #012148); /* Black to Marble Blue gradient */
-    border-radius: 0 0 50% 50%; /* Upside-down half-circle at the bottom */
-    margin: 0 auto; /* Centered and rounded */
+    background: linear-gradient(145deg, #0a0a0a, #012148);
+    border-radius: 0 0 50% 50%;
     width: 90%;
     max-width: 1200px;
-    font-family: 'Papyrus', Fantasy; /* Unique font style */
+    font-family: 'Papyrus', Fantasy;
     position: sticky;
-    top: 0; /* Stick to the top on scroll */
+    top: 0;
     z-index: 1000;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
-    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
-/* Navbar logo style */
+
+/* Navbar logo */
 .navbar-logo {
-    font-size: 1.9 rem;
+    font-size: 1.9rem;
     color: white;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); /* Glow effect */
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
     transition: color 0.3s ease;
     cursor: pointer;
 }
 
 .navbar-logo:hover {
-    color: #007bff; /* Blue hover for logo */
+    color: #007bff;
 }
 
-/* Navbar links container */
+/* Navbar links */
 .navbar-links {
     display: flex;
     align-items: center;
 }
 
-/* Navbar links style */
 .navbar-links a {
     margin: 0 15px;
     color: white;
@@ -54,12 +52,11 @@ body, html {
     position: relative;
 }
 
-/* Hover effect for links */
 .navbar-links a:hover {
-    color: #007bff; /* Blue hover */
+    color: #007bff;
 }
 
-/* Link underline effect on hover */
+/* Underline effect */
 .navbar-links a::after {
     content: '';
     position: absolute;
@@ -75,19 +72,50 @@ body, html {
     width: 100%;
 }
 
-/* Ensure mobile responsiveness */
+/* Hamburger menu (Hidden by default) */
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+/* Mobile responsiveness */
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         padding: 10px 20px;
+        border-radius: 0; /* Removes the half-circle effect for small screens */
+    }
+
+    .menu-icon {
+        display: block; /* Show menu icon */
+        position: absolute;
+        right: 20px;
+        top: 15px;
     }
 
     .navbar-links {
-        margin-top: 10px;
+        display: none; /* Hide links initially */
         flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
     }
 
     .navbar-links a {
+        display: block;
+        padding: 10px;
         margin: 5px 0;
+        font-size: 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
     }
 }

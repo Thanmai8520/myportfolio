@@ -1,13 +1,100 @@
-
+/* General Styles */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #111112; /* Navy Blue */
+  background-color: #111112;
   color: white;
   overflow-x: hidden;
 }
 
+/* Main Container */
 .app-container {
   text-align: center;
-   /* Adjusted for sticky navbar */
+  padding: 20px;
+}
+
+/* Responsive Typography */
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #222;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #333;
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Buttons */
+.button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+/* Responsive Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
 }
