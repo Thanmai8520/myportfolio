@@ -1,0 +1,160 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #101010;
+    color: white;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .customizer {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .customizer-icon {
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .color-circle {
+    display: flex;
+  }
+  
+  
+  .color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  /* .effects-menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .effect-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    position: absolute;
+    left: 40px; 
+    top: 0;
+    background-color: #333;
+    padding: 8px 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    max-width: 90vw;
+    overflow-x: auto;
+  }
+  
+  .effect-button {
+    background-color: #444;
+    border: 2px solid #555;
+    color: #fff;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0.9;
+  }
+  
+  .effect-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  
+  .effect-button.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 1;
+  }
+  
+  .effect-button:focus {
+    outline: none;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.7);
+  }
+  
+
+  .bounce {
+    animation: bounce 1s infinite;
+  }
+  
+  .shake {
+    animation: shake 0.5s infinite;
+  }
+  
+  .wave {
+    animation: wave 1s infinite;
+  }
+  
+  .dance {
+    animation: dance 1s infinite;
+  }
+  
+  .flip {
+    animation: flip 1s forwards;
+  }
+  
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+  }
+  
+  @keyframes wave {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg);
+    }
+  }
+  
+  @keyframes dance {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+  } */
+  

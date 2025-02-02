@@ -1,0 +1,13 @@
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #111112; /* Navy Blue */
+  color: white;
+  overflow-x: hidden;
+}
+
+.app-container {
+  text-align: center;
+   /* Adjusted for sticky navbar */
+}

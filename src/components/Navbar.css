@@ -1,0 +1,93 @@
+/* General page style to remove overflow */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars from appearing */
+    height: 100%;
+    background-color: #0d0d0f; /* Deep Navy */
+}
+
+/* Half-Circle Navbar with upside down curve */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(145deg, #0a0a0a, #012148); /* Black to Marble Blue gradient */
+    border-radius: 0 0 50% 50%; /* Upside-down half-circle at the bottom */
+    margin: 0 auto; /* Centered and rounded */
+    width: 90%;
+    max-width: 1200px;
+    font-family: 'Papyrus', Fantasy; /* Unique font style */
+    position: sticky;
+    top: 0; /* Stick to the top on scroll */
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    
+}
+/* Navbar logo style */
+.navbar-logo {
+    font-size: 1.9 rem;
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7); /* Glow effect */
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar-logo:hover {
+    color: #007bff; /* Blue hover for logo */
+}
+
+/* Navbar links container */
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar links style */
+.navbar-links a {
+    margin: 0 15px;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect for links */
+.navbar-links a:hover {
+    color: #007bff; /* Blue hover */
+}
+
+/* Link underline effect on hover */
+.navbar-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #007bff;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+}
+
+/* Ensure mobile responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .navbar-links {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .navbar-links a {
+        margin: 5px 0;
+    }
+}
